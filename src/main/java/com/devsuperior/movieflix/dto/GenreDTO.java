@@ -1,12 +1,14 @@
 package com.devsuperior.movieflix.dto;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 import com.devsuperior.movieflix.entities.Genre;
 import com.devsuperior.movieflix.entities.Movie;
 
-public class GenreDTO {
+public class GenreDTO implements Serializable{
+	private static final long serialVersionUID = 1L;
 
 	private Long id;
 	private String name;
